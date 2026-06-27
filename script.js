@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    setLanguage(currentLang);
+
 
     // Lang toggle click handler
     const langToggleBtn = document.getElementById('lang-toggle');
@@ -326,4 +326,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    setLanguage(currentLang);
 });
