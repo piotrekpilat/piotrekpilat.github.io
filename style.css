@@ -78,6 +78,11 @@ body.light-theme {
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -88,7 +93,6 @@ body {
     background-color: var(--bg-main);
     color: var(--text-primary);
     line-height: 1.6;
-    overflow-x: hidden;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
@@ -1123,6 +1127,7 @@ body.light-theme .social-icon:hover {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    min-width: 0;
 }
 .info-link-text span {
     font-size: 0.8rem;
@@ -1426,18 +1431,8 @@ body.light-theme .social-icon:hover {
         width: 240px;
         height: 240px;
     }
-    .xp-card {
-        left: -10px;
-        bottom: 10px;
-        padding: 10px 14px;
-    }
-    .xp-card .num {
-        font-size: 1.6rem;
-    }
-    .tech-card {
-        right: -10px;
-        top: 20px;
-        padding: 10px 14px;
+    .xp-card, .tech-card {
+        display: none !important;
     }
     
     .skills-tabs {
