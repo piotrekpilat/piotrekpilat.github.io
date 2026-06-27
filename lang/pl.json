@@ -1,0 +1,149 @@
+{
+  "head": {
+    "description": "Profil zawodowy Piotra Piłata - Programisty PHP z 14-letnim doświadczeniem w budowaniu aplikacji webowych, systemów backendowych i mikrousług."
+  },
+  "nav": {
+    "about": "O mnie",
+    "skills": "Technologie",
+    "experience": "Doświadczenie",
+    "certs": "Certyfikaty",
+    "contact": "Kontakt",
+    "download_resume": "Pobierz Resume"
+  },
+  "logo": {
+    "text": "piotr.piłat"
+  },
+  "hero": {
+    "badge": "PHP & Symfony Specialist",
+    "greeting": "Cześć, tu ",
+    "name": "Piotr Piłat",
+    "subtitle": "Senior Backend Developer & ",
+    "description": "Tworzę stabilne, skalowalne systemy backendowe i architektury oparte na mikrousługach. Od 14 lat przekładam wymagania biznesowe na wydajny i czysty kod.",
+    "btn_contact": "Skontaktuj się",
+    "btn_resume": "Zobacz Resume (PDF)",
+    "xp_label": "Lat w branży",
+    "tech_label": "PHP & Symfony",
+    "scroll_down": "Przewiń w dół"
+  },
+  "about": {
+    "tag": "Kim jestem",
+    "title": "O mnie",
+    "lead": "Jestem programistą PHP z 14-letnim komercyjnym doświadczeniem w projektowaniu i utrzymywaniu zaawansowanych aplikacji internetowych oraz systemów backendowych.",
+    "body1": "Na co dzień pracuję głównie z <strong>PHP 8.3</strong> oraz frameworkiem <strong>Symfony 6</strong>. Posiadam bogate doświadczenie w tworzeniu systemów rozproszonych w architekturze mikrousług oraz komunikacji sterowanej zdarzeniami (event-driven) z użyciem brokera <strong>RabbitMQ</strong>.",
+    "body2": "Moja praca to nie tylko pisanie nowego kodu od zera. Często angażuję się w modernizację systemów legacy, refaktoryzację długu technologicznego, optymalizację wydajnościową baz danych oraz poprawę stabilności systemów w chmurze <strong>AWS</strong>.",
+    "stat1_title": "14 lat",
+    "stat1_desc": "Doświadczenia komercyjnego",
+    "stat2_desc": "Certified Developer",
+    "stat3_title": "Mikrousługi",
+    "stat3_desc": "I Event-driven architecture",
+    "stat4_title": "AI Integracje"
+  },
+  "skills": {
+    "tag": "Co potrafię",
+    "title": "Stack Technologiczny",
+    "tab_backend": "Backend",
+    "tab_cloud": "Chmura",
+    "tab_tools": "Narzędzia",
+    "backend": {
+      "php": "Zaawansowane programowanie obiektowe, optymalizacja kodu, OOP, design patterns.",
+      "symfony": "Główny framework do budowy mikrousług, API i aplikacji biznesowych.",
+      "legacy": "Doświadczenie w starszych frameworkach, migracja systemów legacy.",
+      "api": "Projektowanie i implementacja API gateway, integracje z zewnętrznymi dostawcami.",
+      "rabbitmq": "Komunikacja asynchroniczna i architektury sterowane zdarzeniami.",
+      "db": "Modelowanie relacyjne, optymalizacja zapytań SQL, cache-owanie danych."
+    },
+    "cloud": {
+      "aws": "EC2, RDS, S3, API Gateway, uprawnienia IAM i integracje chmurowe.",
+      "docker": "Konteneryzacja aplikacji, tworzenie środowisk deweloperskich i produkcyjnych.",
+      "terraform": "Podejście Infrastructure as Code (IaC), zarządzanie API Gateway.",
+      "k8s_jenkins": "Podstawy orkiestracji kontenerów oraz utrzymywanie procesów CI/CD."
+    },
+    "tools": {
+      "testing": "Testy jednostkowe, statyczna analiza kodu, dbanie o standardy PSR.",
+      "ai_title": "AI (Claude / Gemini / Codex)",
+      "ai_desc": "Wspieranie pracy deweloperskiej za pomocą AI, integracja z modelami LLM (Ollama).",
+      "git": "Zarządzanie wersjami kodu, praca w zespole (GitFlow).",
+      "other": "Eksperymenty technologiczne, skrypty pomocnicze i automatyzacja procesów."
+    }
+  },
+  "experience": {
+    "tag": "Moja ścieżka",
+    "title": "Doświadczenie Zawodowe",
+    "date1": "09/2013 - Obecnie",
+    "intro1": "Praca nad złożonymi aplikacjami biznesowymi dla sektorów Healthcare, HR i E-commerce, w tym modułami zarządzania pacjentami, automatyzacją procesów HR oraz integracjami płatności.",
+    "bullet1_1": "Projektowanie i implementacja systemów o wysokiej wydajności przy użyciu <strong>PHP 8.3</strong> i <strong>Symfony 5/6</strong>.",
+    "bullet1_2": "Praca w architekturze opartej na <strong>AWS, Kubernetes i Jenkins</strong>.",
+    "bullet1_3": "Wdrażanie infrastruktury dla API Gateway za pomocą <strong>Terraform</strong>.",
+    "bullet1_4": "Optymalizacja systemów przetwarzania danych i kolejek komunikatów (<strong>MySQL, Redis, RabbitMQ</strong>).",
+    "bullet1_5": "Integracja zewnętrznych dostawców usług i bramek płatniczych za pośrednictwem <strong>REST APIs</strong>.",
+    "date2": "09/2012 - 09/2013",
+    "intro2": "Dedykowane wdrożenia CMS oraz rozwój oprogramowania wspierającego procesy marketingowe i e-commerce.",
+    "bullet2_1": "Integracja i modyfikacja stron internetowych opartych o Joomla! oraz WordPress.",
+    "bullet2_2": "Tworzenie skryptów PHP wspierających automatyzację pod kątem SEO.",
+    "bullet2_3": "Optymalizacja zapytań bazodanowych MySQL w modułach CMS.",
+    "bullet2_4": "Pisanie dedykowanych wtyczek na zamówienie klienta.",
+    "bullet2_5": "Wersjonowanie kodu w systemie SVN.",
+    "date3": "02/2012 - 08/2012",
+    "intro3": "Wdrażanie i rozwój funkcjonalności dedykowanych systemów aukcyjnych i sprzedażowych.",
+    "bullet3_1": "Rozwój kodu aplikacji przy użyciu frameworka <strong>Kohana 2</strong> (PHP).",
+    "bullet3_2": "Budowa integracji API typu SOAP (WSDL) do automatyzacji procesów aukcyjnych.",
+    "bullet3_3": "Stosowanie biblioteki jQuery do dynamicznych elementów interfejsu."
+  },
+  "certs": {
+    "tag": "Wiedza potwierdzona",
+    "title": "Certyfikaty",
+    "google_issuer": "Wydany przez Google | 2026-06-08"
+  },
+  "edu": {
+    "tag": "Fundamenty",
+    "title": "Edukacja",
+    "degree": "Magister Inżynier (MSc/BEng)",
+    "field": "Kierunek: Informatyka (Computer Science), Elektrotechnika i Informatyka",
+    "school": "Politechnika Rzeszowska (Rzeszów University of Technology)",
+    "lang_hobbies_title": "Języki & Hobby",
+    "lang_pl_name": "Polski",
+    "lang_pl_level": "Ojczysty (C2)",
+    "lang_en_name": "Angielski",
+    "lang_en_level": "Średniozaawansowany (B2)",
+    "hobby1": "Muzyka Rockowa",
+    "hobby2": "Eksperymenty z nowymi językami (Python/Delphi)",
+    "hobby3": "Psychologia"
+  },
+  "contact": {
+    "tag": "Napisz do mnie",
+    "title": "Kontakt",
+    "intro": "Szukasz doświadczonego programisty PHP/Symfony do projektu, konsultacji architektonicznych lub refaktoryzacji kodu? Odezwij się bezpośrednio:",
+    "card1_label": "Napisz e-mail",
+    "card1_copy_aria": "Kopiuj email",
+    "card2_label": "Zadzwoń",
+    "card2_copy_aria": "Kopiuj telefon",
+    "card3_label": "Profil LinkedIn",
+    "card3_open_aria": "Otwórz LinkedIn",
+    "card4_label": "Lokalizacja",
+    "location": "Kościuszki 97A, 37-100 Łańcut, Polska",
+    "loading": "Ładowanie...",
+    "form": {
+      "name_label": "Imię i nazwisko",
+      "name_placeholder": "np. Jan Kowalski",
+      "email_label": "Twój adres e-mail",
+      "email_placeholder": "np. jan@kowalski.pl",
+      "message_label": "Wiadomość",
+      "message_placeholder": "W czym mogę Ci pomóc?",
+      "captcha_loading": "Test bezpieczeństwa: Ładowanie zagadki...",
+      "submit_btn": "Wyślij wiadomość",
+      "success_toast": "Wiadomość została wysłana! Dziękuję za kontakt."
+    }
+  },
+  "footer": {
+    "copyright": "&copy; 2026 Piotr Piłat. Wszelkie prawa zastrzeżone.",
+    "resume": "Zobacz Resume w PDF",
+    "gdpr": "Zgoda RODO załączona w pliku Resume PDF."
+  },
+  "js": {
+    "captcha_incorrect": "Wynik testu bezpieczeństwa jest niepoprawny. Spróbuj ponownie z nowym pytaniem.",
+    "form_id_error": "Skonfiguruj swój Form ID z Formspree w pliku HTML (atrybut action)!",
+    "submit_error": "Wystąpił problem podczas wysyłania formularza.",
+    "network_error": "Wystąpił problem z wysłaniem wiadomości. Sprawdź swoje połączenie internetowe.",
+    "captcha_label": "Test bezpieczeństwa: Ile to jest <strong>{num1} + {num2}</strong>?"
+  }
+}
