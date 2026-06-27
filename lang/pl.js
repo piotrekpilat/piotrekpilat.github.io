@@ -1,4 +1,4 @@
-{
+window.translationsPl = {
   "head": {
     "description": "Profil zawodowy Piotra Piłata - Programisty PHP z 14-letnim doświadczeniem w budowaniu aplikacji webowych, systemów backendowych i mikrousług."
   },
@@ -146,4 +146,4 @@
     "network_error": "Wystąpił problem z wysłaniem wiadomości. Sprawdź swoje połączenie internetowe.",
     "captcha_label": "Test bezpieczeństwa: Ile to jest <strong>{num1} + {num2}</strong>?"
   }
-}
+};

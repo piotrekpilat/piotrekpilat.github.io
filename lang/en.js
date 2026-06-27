@@ -1,4 +1,4 @@
-{
+window.translationsEn = {
   "head": {
     "description": "Professional profile of Piotr Piłat - PHP Developer with 14 years of commercial experience building web applications, backend systems, and microservices."
   },
@@ -146,4 +146,4 @@
     "network_error": "Oops! There was a problem submitting your form. Please check your network connection.",
     "captcha_label": "Security Check: What is <strong>{num1} + {num2}</strong>?"
   }
-}
+};
