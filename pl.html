@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piotr Piłat - Software Developer | PHP & Symfony Specialist</title>
+    <meta name="description" content="Profil zawodowy Piotra Piłata - Programisty PHP z 14-letnim doświadczeniem w budowaniu aplikacji webowych, systemów backendowych i mikrousług.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Gradient Grids -->
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                piotr.piłat<span class="logo-lang">()</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">O mnie</a></li>
+                    <li><a href="#skills" class="nav-link">Technologie</a></li>
+                    <li><a href="#experience" class="nav-link">Doświadczenie</a></li>
+                    <li><a href="#education-certs" class="nav-link">Certyfikaty</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="index.html" class="lang-toggle-btn" aria-label="Switch language to English">
+                    <i class="fa-solid fa-globe"></i> <span>EN</span>
+                </a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Zmień motyw">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="./Resume-Piotr-Pilat.pdf" class="btn btn-secondary nav-cv-btn" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i> Pobierz Resume
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="hero-badge"><i class="fa-solid fa-circle-check"></i> PHP & Symfony Specialist</span>
+                </div>
+                <h1 class="hero-title">
+                    Cześć, tu <span class="text-gradient">Piotr Piłat</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Senior Backend Developer & <span class="typing-text" id="typing-text">PHP Expert</span>
+                </h2>
+                <p class="hero-description">
+                    Tworzę stabilne, skalowalne systemy backendowe i architektury oparte na mikrousługach. 
+                    Od 14 lat przekładam wymagania biznesowe na wydajny i czysty kod.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        Skontaktuj się <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                    <a href="./Resume-Piotr-Pilat.pdf" class="btn btn-outline" target="_blank">
+                        Zobacz Resume (PDF) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/piotr-pilat/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon contact-trigger" data-mailto="cGlvdHJla3BpbGF0QGdtYWlsLmNvbQ==" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-icon contact-trigger" data-tel="KzQ4NjA3OTE4Nzg3" aria-label="Telefon">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="image-wrapper">
+                    <div class="glowing-border"></div>
+                    <img src="assets/php_tech_mascot.jpg" alt="Piotr Piłat - PHP Mascot" class="profile-img">
+                </div>
+                <div class="floating-card xp-card">
+                    <span class="num">14+</span>
+                    <span class="label">Lat w branży</span>
+                </div>
+                <div class="floating-card tech-card">
+                    <i class="fa-brands fa-php text-gradient"></i>
+                    <span class="label">PHP & Symfony</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about" aria-label="Przewiń w dół">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kim jestem</span>
+                <h2 class="section-title">O mnie</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text-container">
+                    <p class="lead-text">
+                        Jestem programistą PHP z 14-letnim komercyjnym doświadczeniem w projektowaniu i utrzymywaniu zaawansowanych aplikacji internetowych oraz systemów backendowych.
+                    </p>
+                    <p class="body-text">
+                        Na co dzień pracuję głównie z <strong>PHP 8.3</strong> oraz frameworkiem <strong>Symfony 6</strong>. Posiadam bogate doświadczenie w tworzeniu systemów rozproszonych w architekturze mikrousług oraz komunikacji sterowanej zdarzeniami (event-driven) z użyciem brokera <strong>RabbitMQ</strong>.
+                    </p>
+                    <p class="body-text">
+                        Moja praca to nie tylko pisanie nowego kodu od zera. Często angażuję się w modernizację systemów legacy, refaktoryzację długu technologicznego, optymalizację wydajnościową baz danych oraz poprawę stabilności systemów w chmurze <strong>AWS</strong>.
+                    </p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fa-solid fa-code-branch text-gradient"></i></div>
+                        <h3>14 lat</h3>
+                        <p>Doświadczenia komercyjnego</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fa-brands fa-aws text-gradient"></i></div>
+                        <h3>AWS</h3>
+                        <p>Certified Developer</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fa-solid fa-cubes text-gradient"></i></div>
+                        <h3>Mikrousługi</h3>
+                        <p>I Event-driven architecture</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fa-solid fa-brain text-gradient"></i></div>
+                        <h3>AI Integracje</h3>
+                        <p>Claude, Gemini, Ollama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section gray-bg">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Co potrafię</span>
+                <h2 class="section-title">Stack Technologiczny</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="devops">Chmura</button>
+                <button class="tab-btn" data-tab="testing-others">Narzędzia</button>
+            </div>
+
+            <div class="tab-content active" id="backend">
+                <div class="skills-grid">
+                    <!-- PHP -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-php"></i></div>
+                        <div class="skill-info">
+                            <h4>PHP 8.3</h4>
+                            <p>Zaawansowane programowanie obiektowe, optymalizacja kodu, OOP, design patterns.</p>
+                        </div>
+                    </div>
+                    <!-- Symfony -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-symfony"></i></div>
+                        <div class="skill-info">
+                            <h4>Symfony 5/6</h4>
+                            <p>Główny framework do budowy mikrousług, API i aplikacji biznesowych.</p>
+                        </div>
+                    </div>
+                    <!-- Yii & Kohana -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="skill-info">
+                            <h4>Yii 1.1 & Kohana 2</h4>
+                            <p>Doświadczenie w starszych frameworkach, migracja systemów legacy.</p>
+                        </div>
+                    </div>
+                    <!-- REST API -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <div class="skill-info">
+                            <h4>REST / SOAP APIs</h4>
+                            <p>Projektowanie i implementacja API gateway, integracje z zewnętrznymi dostawcami.</p>
+                        </div>
+                    </div>
+                    <!-- RabbitMQ -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div class="skill-info">
+                            <h4>RabbitMQ</h4>
+                            <p>Komunikacja asynchroniczna i architektury sterowane zdarzeniami.</p>
+                        </div>
+                    </div>
+                    <!-- Databases -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <div class="skill-info">
+                            <h4>MySQL & Redis</h4>
+                            <p>Modelowanie relacyjne, optymalizacja zapytań SQL, cache-owanie danych.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="devops">
+                <div class="skills-grid">
+                    <!-- AWS -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-aws"></i></div>
+                        <div class="skill-info">
+                            <h4>AWS (Amazon Web Services)</h4>
+                            <p>EC2, RDS, S3, API Gateway, uprawnienia IAM i integracje chmurowe.</p>
+                        </div>
+                    </div>
+                    <!-- Docker -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-docker"></i></div>
+                        <div class="skill-info">
+                            <h4>Docker</h4>
+                            <p>Konteneryzacja aplikacji, tworzenie środowisk deweloperskich i produkcyjnych.</p>
+                        </div>
+                    </div>
+                    <!-- Terraform -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <div class="skill-info">
+                            <h4>Terraform</h4>
+                            <p>Podejście Infrastructure as Code (IaC), zarządzanie API Gateway.</p>
+                        </div>
+                    </div>
+                    <!-- Kubernetes & Jenkins -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                        <div class="skill-info">
+                            <h4>Kubernetes & Jenkins</h4>
+                            <p>Podstawy orkiestracji kontenerów oraz utrzymywanie procesów CI/CD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="testing-others">
+                <div class="skills-grid">
+                    <!-- Testing -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-vial"></i></div>
+                        <div class="skill-info">
+                            <h4>Xdebug, PHPUnit, PHPCS</h4>
+                            <p>Testy jednostkowe, statyczna analiza kodu, dbanie o standardy PSR.</p>
+                        </div>
+                    </div>
+                    <!-- AI Tools -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+                        <div class="skill-info">
+                            <h4>AI (Claude / Gemini / Codex)</h4>
+                            <p>Wspieranie pracy deweloperskiej za pomocą AI, integracja z modelami LLM (Ollama).</p>
+                        </div>
+                    </div>
+                    <!-- Git & SVN -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-code-commit"></i></div>
+                        <div class="skill-info">
+                            <h4>Git & SVN</h4>
+                            <p>Zarządzanie wersjami kodu, praca w zespole (GitFlow).</p>
+                        </div>
+                    </div>
+                    <!-- Other Languages -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div class="skill-info">
+                            <h4>Python & Delphi</h4>
+                            <p>Eksperymenty technologiczne, skrypty pomocnicze i automatyzacja procesów.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Moja ścieżka</span>
+                <h2 class="section-title">Doświadczenie Zawodowe</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Xebia -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">09/2013 - Obecnie</div>
+                    <div class="timeline-content">
+                        <div class="company-badge-wrapper">
+                            <span class="company-name">PGS Software / Xebia</span>
+                            <span class="job-title">Software Developer</span>
+                        </div>
+                        <p class="timeline-intro">
+                            Praca nad złożonymi aplikacjami biznesowymi dla sektorów Healthcare, HR i E-commerce, w tym modułami zarządzania pacjentami, automatyzacją procesów HR oraz integracjami płatności.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>Projektowanie i implementacja systemów o wysokiej wydajności przy użyciu <strong>PHP 8.3</strong> i <strong>Symfony 5/6</strong>.</li>
+                            <li>Praca w architekturze opartej na <strong>AWS, Kubernetes i Jenkins</strong>.</li>
+                            <li>Wdrażanie infrastruktury dla API Gateway za pomocą <strong>Terraform</strong>.</li>
+                            <li>Optymalizacja systemów przetwarzania danych i kolejek komunikatów (<strong>MySQL, Redis, RabbitMQ</strong>).</li>
+                            <li>Integracja zewnętrznych dostawców usług i bramek płatniczych za pośrednictwem <strong>REST APIs</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Vision IT -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">09/2012 - 09/2013</div>
+                    <div class="timeline-content">
+                        <div class="company-badge-wrapper">
+                            <span class="company-name">Vision IT</span>
+                            <span class="job-title">Software Developer</span>
+                        </div>
+                        <p class="timeline-intro">
+                            Dedykowane wdrożenia CMS oraz rozwój oprogramowania wspierającego procesy marketingowe i e-commerce.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>Integracja i modyfikacja stron internetowych opartych o Joomla! oraz WordPress.</li>
+                            <li>Tworzenie skryptów PHP wspierających automatyzację pod kątem SEO.</li>
+                            <li>Optymalizacja zapytań bazodanowych MySQL w modułach CMS.</li>
+                            <li>Pisanie dedykowanych wtyczek na zamówienie klienta.</li>
+                            <li>Wersjonowanie kodu w systemie SVN.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PIR-MatysArt -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">02/2012 - 08/2012</div>
+                    <div class="timeline-content">
+                        <div class="company-badge-wrapper">
+                            <span class="company-name">PIR-MatysArt</span>
+                            <span class="job-title">Software Developer</span>
+                        </div>
+                        <p class="timeline-intro">
+                            Wdrażanie i rozwój funkcjonalności dedykowanych systemów aukcyjnych i sprzedażowych.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>Rozwój kodu aplikacji przy użyciu frameworka <strong>Kohana 2</strong> (PHP).</li>
+                            <li>Budowa integracji API typu SOAP (WSDL) do automatyzacji procesów aukcyjnych.</li>
+                            <li>Stosowanie biblioteki jQuery do dynamicznych elementów interfejsu.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education-certs" class="section education-certs-section gray-bg">
+        <div class="container">
+            <div class="education-certs-grid">
+                
+                <!-- Certifications -->
+                <div class="certs-column">
+                    <div class="section-header align-left">
+                        <span class="section-tag">Wiedza potwierdzona</span>
+                        <h2 class="section-title">Certyfikaty</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    
+                    <div class="certs-list">
+                        <!-- AWS Cert -->
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fa-brands fa-aws"></i>
+                            </div>
+                            <div class="cert-details">
+                                <h4>AWS Certified Developer – Associate</h4>
+                                <p class="issuer">Amazon Web Services (AWS)</p>
+                                <span class="cert-id">ID: AWS00376545 | 2017-06-12</span>
+                            </div>
+                        </div>
+
+                        <!-- Anthropic Cert -->
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div class="cert-details">
+                                <h4>Several Anthropic Certifications</h4>
+                            </div>
+                        </div>
+
+                        <!-- Google Cert -->
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                            <div class="cert-details">
+                                <h4>Using AI in Business Development</h4>
+                                <p class="issuer">Issued by Google | 2026-06-08</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="edu-column">
+                    <div class="section-header align-left">
+                        <span class="section-tag">Fundamenty</span>
+                        <h2 class="section-title">Edukacja</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-details">
+                            <h3>Magister Inżynier (MSc/BEng)</h3>
+                            <p class="field">Kierunek: Informatyka (Computer Science), Elektrotechnika i Informatyka</p>
+                            <p class="school">Politechnika Rzeszowska (Rzeszów University of Technology)</p>
+                            <span class="years">2006 - 2012</span>
+                        </div>
+                    </div>
+
+                    <div class="lang-hobbies-card">
+                        <h3>Języki & Hobby</h3>
+                        <div class="lang-grid">
+                            <div class="lang-item">
+                                <span class="lang-name">Polski</span>
+                                <div class="lang-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                </div>
+                                <span class="lang-level">Ojczysty (C2)</span>
+                            </div>
+                            <div class="lang-item">
+                                <span class="lang-name">Angielski</span>
+                                <div class="lang-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                                <span class="lang-level">Średniozaawansowany (B2)</span>
+                            </div>
+                        </div>
+                        <div class="hobbies-tags">
+                            <span class="hobby-tag"><i class="fa-solid fa-headset"></i> Muzyka Rockowa</span>
+                            <span class="hobby-tag"><i class="fa-solid fa-gears"></i> Eksperymenty z nowymi językami (Python/Delphi)</span>
+                            <span class="hobby-tag"><i class="fa-solid fa-brain"></i> Psychologia</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Napisz do mnie</span>
+                <h2 class="section-title">Kontakt</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info cards -->
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        Szukasz doświadczonego programisty PHP/Symfony do projektu, konsultacji architektonicznych lub refaktoryzacji kodu? Odezwij się bezpośrednio:
+                    </p>
+
+                    <div class="info-link-card">
+                        <div class="info-link-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-link-text">
+                            <span>Napisz e-mail</span>
+                            <a href="#" class="contact-trigger" data-mailto="cGlvdHJla3BpbGF0QGdtYWlsLmNvbQ==" data-text-decode="cGlvdHJla3BpbGF0QGdtYWlsLmNvbQ==">Ładowanie...</a>
+                        </div>
+                        <button class="copy-btn" data-copy-obfuscated="cGlvdHJla3BpbGF0QGdtYWlsLmNvbQ==" aria-label="Kopiuj email">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+
+                    <div class="info-link-card">
+                        <div class="info-link-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-link-text">
+                            <span>Zadzwoń</span>
+                            <a href="#" class="contact-trigger" data-tel="KzQ4NjA3OTE4Nzg3" data-text-decode="KzQ4IDYwNyA5MTggNzg3">Ładowanie...</a>
+                        </div>
+                        <button class="copy-btn" data-copy-obfuscated="KzQ4IDYwNyA5MTggNzg3" aria-label="Kopiuj telefon">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+
+                    <div class="info-link-card">
+                        <div class="info-link-icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="info-link-text">
+                            <span>Profil LinkedIn</span>
+                            <a href="https://linkedin.com/in/piotr-pilat/" target="_blank">linkedin.com/in/piotr-pilat</a>
+                        </div>
+                        <a href="https://linkedin.com/in/piotr-pilat/" target="_blank" class="link-btn" aria-label="Otwórz LinkedIn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <div class="info-link-card">
+                        <div class="info-link-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-link-text">
+                            <span>Lokalizacja</span>
+                            <strong>Kościuszki 97A, 37-100 Łańcut, Polska</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Mock -->
+                <div class="contact-form-container">
+                    <form action="https://formspree.io/f/mnjkdekb" method="POST" id="contact-form" class="contact-form">
+                        <!-- Honeypot field for Formspree spam prevention -->
+                        <input type="text" name="_gotcha" style="display:none">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Imię i nazwisko</label>
+                                <input type="text" id="form-name" name="name" placeholder="np. Jan Kowalski" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-email">Twój adres e-mail</label>
+                                <input type="email" id="form-email" name="email" placeholder="np. jan@kowalski.pl" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-message">Wiadomość</label>
+                                <textarea id="form-message" name="message" rows="5" placeholder="W czym mogę Ci pomóc?" required></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Math challenge Captcha -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-captcha" id="captcha-label">Test bezpieczeństwa: Ładowanie zagadki...</label>
+                                <input type="number" id="form-captcha" placeholder="Wpisz wynik tutaj" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Wyślij wiadomość <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="form-toast" class="form-toast">
+                        <i class="fa-solid fa-circle-check"></i> Wiadomość została wysłana! Dziękuję za kontakt.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">
+                &copy; 2026 Piotr Piłat. Wszelkie prawa zastrzeżone.
+            </p>
+            <div class="footer-bottom-links">
+                <a href="./Resume-Piotr-Pilat.pdf" target="_blank" class="footer-link">Zobacz Resume w PDF</a>
+                <span class="divider">|</span>
+                <span class="gdpr-info">Zgoda RODO załączona w pliku Resume PDF.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

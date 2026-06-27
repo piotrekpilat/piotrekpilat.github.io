@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="head.title">Piotr Piłat - Software Developer | PHP & Symfony Specialist</title>
+    <meta name="description" content="Professional profile of Piotr Piłat - PHP Developer with 14 years of commercial experience building web applications, backend systems, and microservices." data-i18n-attr="content:head.description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                <span data-i18n="logo.text">piotrekpilat</span><span class="logo-lang">()</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#education-certs" class="nav-link" data-i18n="nav.certs">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="lang-toggle" class="lang-toggle-btn" aria-label="Switch language">
+                    <i class="fa-solid fa-globe"></i> <span id="lang-btn-text">PL</span>
+                </button>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="./Resume-Piotr-Pilat.pdf" class="btn btn-secondary nav-cv-btn" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i> <span data-i18n="nav.download_resume">Download Resume</span>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="hero-badge"><i class="fa-solid fa-circle-check"></i> <span data-i18n="hero.badge">PHP & Symfony Specialist</span></span>
+                </div>
+                <h1 class="hero-title">
+                    <span data-i18n="hero.greeting">Hi, I'm </span><span class="text-gradient" data-i18n="hero.name">Piotr Piłat</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span data-i18n="hero.subtitle">Backend Developer & </span><span class="typing-text" id="typing-text">PHP Expert</span>
+                </h2>
+                <p class="hero-description" data-i18n="hero.description">
+                    I build stable, scalable backend systems and microservices-based architectures. 
+                    For 14 years, I have been translating business requirements into efficient and clean code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span data-i18n="hero.btn_contact">Get in Touch</span> <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                    <a href="./Resume-Piotr-Pilat.pdf" class="btn btn-outline" target="_blank">
+                        <span data-i18n="hero.btn_resume">View Resume (PDF)</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/piotr-pilat/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon contact-trigger" data-mailto="cGlvdHJla3BpbGF0QGdtYWlsLmNvbQ==" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-icon contact-trigger" data-tel="KzQ4NjA3OTE4Nzg3" aria-label="Phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="image-wrapper">
+                    <div class="glowing-border"></div>
+                    <img src="assets/php_tech_mascot.jpg" alt="Piotr Piłat - PHP Mascot" class="profile-img">
+                </div>
+                <div class="floating-card xp-card">
+                    <span class="num">14+</span>
+                    <span class="label" data-i18n="hero.xp_label">Years of Experience</span>
+                </div>
+                <div class="floating-card tech-card">
+                    <i class="fa-brands fa-php text-gradient"></i>
+                    <span class="label" data-i18n="hero.tech_label">PHP & Symfony</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about" aria-label="Scroll Down" data-i18n-attr="aria-label:hero.scroll_down">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about.tag">Who I am</span>
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text-container">
+                    <p class="lead-text" data-i18n="about.lead">
+                        I am a PHP Developer with 14 years of commercial experience in designing and maintaining advanced web applications and backend systems.
+                    </p>
+                    <p class="body-text" data-i18n="about.body1">
+                        On a daily basis, I work mainly with <strong>PHP 8.3</strong> and the <strong>Symfony 6</strong> framework. I have extensive experience in creating distributed systems in microservices architecture and event-driven communication using <strong>RabbitMQ</strong>.
+                    </p>
+                    <p class="body-text" data-i18n="about.body2">
+                        My work is not just about writing new code from scratch. I frequently engage in modernizing legacy systems, refactoring technical debt, optimizing database performance, and improving the stability of systems in the <strong>AWS</strong> cloud.
+                    </p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fa-solid fa-code-branch text-gradient"></i></div>
+                        <h3 data-i18n="about.stat1_title">14 Years</h3>
+                        <p data-i18n="about.stat1_desc">Commercial Experience</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fa-brands fa-aws text-gradient"></i></div>
+                        <h3>AWS</h3>
+                        <p data-i18n="about.stat2_desc">Certified Developer</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fa-solid fa-cubes text-gradient"></i></div>
+                        <h3 data-i18n="about.stat3_title">Microservices</h3>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon"><i class="fa-solid fa-brain text-gradient"></i></div>
+                        <h3 data-i18n="about.stat4_title">AI Integrations</h3>
+                        <p>Claude, Gemini, Ollama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section gray-bg">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="skills.tag">My Skillset</span>
+                <h2 class="section-title" data-i18n="skills.title">Tech Stack</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="backend" data-i18n="skills.tab_backend">Backend</button>
+                <button class="tab-btn" data-tab="devops" data-i18n="skills.tab_cloud">Cloud</button>
+                <button class="tab-btn" data-tab="testing-others" data-i18n="skills.tab_tools">Tools</button>
+            </div>
+
+            <div class="tab-content active" id="backend">
+                <div class="skills-grid">
+                    <!-- PHP -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-php"></i></div>
+                        <div class="skill-info">
+                            <h4>PHP 8.3</h4>
+                            <p data-i18n="skills.backend.php">Advanced object-oriented programming, code optimization, OOP, design patterns.</p>
+                        </div>
+                    </div>
+                    <!-- Symfony -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-symfony"></i></div>
+                        <div class="skill-info">
+                            <h4>Symfony 5/6</h4>
+                            <p data-i18n="skills.backend.symfony">Primary framework for building microservices, APIs, and business applications.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="skill-info">
+                            <h4>Yii 1.1 & Kohana 2</h4>
+                            <p data-i18n="skills.backend.legacy">Experience with legacy frameworks and refactoring/migrating older codebases.</p>
+                        </div>
+                    </div>
+                    <!-- REST API -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <div class="skill-info">
+                            <h4>REST / SOAP APIs</h4>
+                            <p data-i18n="skills.backend.api">API Gateway design and implementation, integration with external third-party systems.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div class="skill-info">
+                            <h4>RabbitMQ</h4>
+                            <p data-i18n="skills.backend.rabbitmq">Asynchronous messaging and event-driven communication configurations.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <div class="skill-info">
+                            <h4>MySQL & Redis</h4>
+                            <p data-i18n="skills.backend.db">Relational data modeling, SQL query optimizations, and caching mechanisms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="devops">
+                <div class="skills-grid">
+                    <!-- AWS -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-aws"></i></div>
+                        <div class="skill-info">
+                            <h4>AWS (Amazon Web Services)</h4>
+                            <p data-i18n="skills.cloud.aws">EC2, RDS, S3, API Gateway, IAM permissions, and cloud service integrations.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-docker"></i></div>
+                        <div class="skill-info">
+                            <h4>Docker</h4>
+                            <p data-i18n="skills.cloud.docker">Containerization of applications, maintaining dev and production environments.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <div class="skill-info">
+                            <h4>Terraform</h4>
+                            <p data-i18n="skills.cloud.terraform">Infrastructure as Code (IaC) principles, focusing on managing API Gateway.</p>
+                        </div>
+                    </div>
+                    <!-- Kubernetes & Jenkins -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                        <div class="skill-info">
+                            <h4>Kubernetes & Jenkins</h4>
+                            <p data-i18n="skills.cloud.k8s_jenkins">Basic container orchestration and configuring automation CI/CD pipelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="testing-others">
+                <div class="skills-grid">
+                    <!-- Testing -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-vial"></i></div>
+                        <div class="skill-info">
+                            <h4>Xdebug, PHPUnit, PHPCS</h4>
+                            <p data-i18n="skills.tools.testing">Unit testing, static code analysis, and ensuring PSR code quality standards.</p>
+                        </div>
+                    </div>
+                    <!-- AI Tools -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+                        <div class="skill-info">
+                            <h4 data-i18n="skills.tools.ai_title">AI Assistance & APIs</h4>
+                            <p data-i18n="skills.tools.ai_desc">Using AI tools (Claude / Gemini / Codex) and integrations with LLM configurations (Ollama).</p>
+                        </div>
+                    </div>
+                    <!-- Git & SVN -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-code-commit"></i></div>
+                        <div class="skill-info">
+                            <h4>Git & SVN</h4>
+                            <p data-i18n="skills.tools.git">Code version control systems, team workflows, and GitFlow practices.</p>
+                        </div>
+                    </div>
+                    <!-- Other Languages -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div class="skill-info">
+                            <h4>Python & Delphi</h4>
+                            <p data-i18n="skills.tools.other">Technological experiments, helper script creation, and process automation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="experience.tag">My Career Path</span>
+                <h2 class="section-title" data-i18n="experience.title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-i18n="experience.date1">09/2013 - Current</div>
+                    <div class="timeline-content">
+                        <div class="company-badge-wrapper">
+                            <span class="company-name">PGS Software / Xebia</span>
+                            <span class="job-title" data-i18n="experience.title1">Software Developer</span>
+                        </div>
+                        <p class="timeline-intro" data-i18n="experience.intro1">
+                            Developing complex business applications for Healthcare, HR, and E-commerce sectors, including patient management modules, HR workflow automation, and payment integrations.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="experience.bullet1_1">Designing and implementing high-performance systems using <strong>PHP 8.3</strong> and <strong>Symfony 5/6</strong> framework.</li>
+                            <li data-i18n="experience.bullet1_2">Working mostly within the <strong>AWS, Kubernetes, and Jenkins</strong> stack.</li>
+                            <li data-i18n="experience.bullet1_3">Maintaining API Gateway structures using <strong>Terraform</strong>.</li>
+                            <li data-i18n="experience.bullet1_4">Optimizing data handling and messaging architectures with <strong>MySQL, Redis, and RabbitMQ</strong>.</li>
+                            <li data-i18n="experience.bullet1_5">Integrating external third-party APIs, including payment gateways and external data providers.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-i18n="experience.date2">09/2012 - 09/2013</div>
+                    <div class="timeline-content">
+                        <div class="company-badge-wrapper">
+                            <span class="company-name">Vision IT</span>
+                            <span class="job-title">Software Developer</span>
+                        </div>
+                        <p class="timeline-intro" data-i18n="experience.intro2">
+                            Handled professional CMS deployments and developed automation scripts supporting marketing and SEO activities.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="experience.bullet2_1">Integrating and modifying professional websites based on Joomla! and WordPress platforms.</li>
+                            <li data-i18n="experience.bullet2_2">Developing standalone PHP scripts dedicated to SEO optimization and automation.</li>
+                            <li data-i18n="experience.bullet2_3">Working on Joomla/WordPress modules and database query optimizations.</li>
+                            <li data-i18n="experience.bullet2_4">Customizing CMS plugins to meet specific client requirements.</li>
+                            <li data-i18n="experience.bullet2_5">Managing database operations with MySQL and version control via SVN.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-i18n="experience.date3">02/2012 - 08/2012</div>
+                    <div class="timeline-content">
+                        <div class="company-badge-wrapper">
+                            <span class="company-name">PIR-MatysArt</span>
+                            <span class="job-title">Software Developer</span>
+                        </div>
+                        <p class="timeline-intro" data-i18n="experience.intro3">
+                            Development of dedicated auction management systems and transaction integrations.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="experience.bullet3_1">Developed backend features for specialized applications using the <strong>Kohana 2</strong> framework.</li>
+                            <li data-i18n="experience.bullet3_2">Engineered a SOAP API system (WSDL) for automated auction management and transaction data collection.</li>
+                            <li data-i18n="experience.bullet3_3">Utilized jQuery library to build dynamic and interactive UI features.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certs Section -->
+    <section id="education-certs" class="section education-certs-section gray-bg">
+        <div class="container">
+            <div class="education-certs-grid">
+                
+                <!-- Certifications -->
+                <div class="certs-column">
+                    <div class="section-header align-left">
+                        <span class="section-tag" data-i18n="certs.tag">Verified Knowledge</span>
+                        <h2 class="section-title" data-i18n="certs.title">Certifications</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    
+                    <div class="certs-list">
+                        <!-- AWS Cert -->
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fa-brands fa-aws"></i>
+                            </div>
+                              <div class="cert-details">
+                                  <h4>AWS Certified Developer – Associate</h4>
+                                  <p class="issuer">Amazon Web Services (AWS)</p>
+                                  <span class="cert-id">ID: AWS00376545 | 2017-06-12</span>
+                              </div>
+                          </div>
+
+                          <!-- Anthropic Cert -->
+                          <div class="cert-item">
+                              <div class="cert-icon">
+                                  <i class="fa-solid fa-brain"></i>
+                              </div>
+                              <div class="cert-details">
+                                  <h4>Several Anthropic Certifications</h4>
+                              </div>
+                          </div>
+
+                          <!-- Google Cert -->
+                          <div class="cert-item">
+                              <div class="cert-icon">
+                                  <i class="fa-brands fa-google"></i>
+                              </div>
+                              <div class="cert-details">
+                                  <h4>Using AI in Business Development</h4>
+                                  <p class="issuer" data-i18n="certs.google_issuer">Issued by Google | 2026-06-08</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Education -->
+                  <div class="edu-column">
+                      <div class="section-header align-left">
+                          <span class="section-tag" data-i18n="edu.tag">Foundations</span>
+                          <h2 class="section-title" data-i18n="edu.title">Education</h2>
+                          <div class="section-line"></div>
+                      </div>
+
+                      <div class="edu-card">
+                          <div class="edu-icon">
+                              <i class="fa-solid fa-graduation-cap"></i>
+                          </div>
+                          <div class="edu-details">
+                              <h3 data-i18n="edu.degree">Master of Science / Bachelor of Engineering</h3>
+                              <p class="field" data-i18n="edu.field">Major: Computer Science, Electrical and Computer Engineering</p>
+                              <p class="school" data-i18n="edu.school">Rzeszów University of Technology - Poland</p>
+                              <span class="years">2006 - 2012</span>
+                          </div>
+                      </div>
+
+                      <div class="lang-hobbies-card">
+                          <h3 data-i18n="edu.lang_hobbies_title">Languages & Hobbies</h3>
+                          <div class="lang-grid">
+                              <div class="lang-item">
+                                  <span class="lang-name" data-i18n="edu.lang_pl_name">Polish</span>
+                                  <div class="lang-dots">
+                                      <span class="dot active"></span>
+                                      <span class="dot active"></span>
+                                      <span class="dot active"></span>
+                                      <span class="dot active"></span>
+                                      <span class="dot active"></span>
+                                  </div>
+                                  <span class="lang-level" data-i18n="edu.lang_pl_level">Native (C2)</span>
+                              </div>
+                              <div class="lang-item">
+                                  <span class="lang-name" data-i18n="edu.lang_en_name">English</span>
+                                  <div class="lang-dots">
+                                      <span class="dot active"></span>
+                                      <span class="dot active"></span>
+                                      <span class="dot active"></span>
+                                      <span class="dot active"></span>
+                                      <span class="dot"></span>
+                                  </div>
+                                  <span class="lang-level" data-i18n="edu.lang_en_level">Upper Intermediate (B2)</span>
+                              </div>
+                          </div>
+                          <div class="hobbies-tags">
+                              <span class="hobby-tag"><i class="fa-solid fa-headset"></i> <span data-i18n="edu.hobby1">Rock Music</span></span>
+                              <span class="hobby-tag"><i class="fa-solid fa-gears"></i> <span data-i18n="edu.hobby2">Coding Experiments (Python/Delphi)</span></span>
+                              <span class="hobby-tag"><i class="fa-solid fa-brain"></i> <span data-i18n="edu.hobby3">Psychology</span></span>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+          <div class="container">
+              <div class="section-header">
+                  <span class="section-tag" data-i18n="contact.tag">Get in Touch</span>
+                  <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+                  <div class="section-line"></div>
+              </div>
+              <div class="contact-grid">
+
+                  <div class="contact-info">
+                      <p class="contact-intro" data-i18n="contact.intro">
+                          Looking for an experienced PHP/Symfony developer for a project, architectural consulting, or code refactoring? Feel free to contact me directly:
+                      </p>
+
+                      <div class="info-link-card">
+                          <div class="info-link-icon"><i class="fa-solid fa-envelope"></i></div>
+                          <div class="info-link-text">
+                              <span data-i18n="contact.card1_label">Send an Email</span>
+                              <a href="#" class="contact-trigger" data-mailto="cGlvdHJla3BpbGF0QGdtYWlsLmNvbQ==" data-text-decode="cGlvdHJla3BpbGF0QGdtYWlsLmNvbQ==">Loading...</a>
+                          </div>
+                          <button class="copy-btn" data-copy-obfuscated="cGlvdHJla3BpbGF0QGdtYWlsLmNvbQ==" aria-label="Copy email" data-i18n-attr="aria-label:contact.card1_copy_aria">
+                              <i class="fa-regular fa-copy"></i>
+                          </button>
+                      </div>
+
+                      <div class="info-link-card">
+                          <div class="info-link-icon"><i class="fa-solid fa-phone"></i></div>
+                          <div class="info-link-text">
+                              <span data-i18n="contact.card2_label">Call Me</span>
+                              <a href="#" class="contact-trigger" data-tel="KzQ4NjA3OTE4Nzg3" data-text-decode="KzQ4IDYwNyA5MTggNzg3">Loading...</a>
+                          </div>
+                          <button class="copy-btn" data-copy-obfuscated="KzQ4IDYwNyA5MTggNzg3" aria-label="Copy phone number" data-i18n-attr="aria-label:contact.card2_copy_aria">
+                              <i class="fa-regular fa-copy"></i>
+                          </button>
+                      </div>
+
+                      <div class="info-link-card">
+                          <div class="info-link-icon"><i class="fa-brands fa-linkedin"></i></div>
+                          <div class="info-link-text">
+                              <span data-i18n="contact.card3_label">LinkedIn Profile</span>
+                              <a href="https://linkedin.com/in/piotr-pilat/" target="_blank">linkedin.com/in/piotr-pilat</a>
+                          </div>
+                          <a href="https://linkedin.com/in/piotr-pilat/" target="_blank" class="link-btn" aria-label="Open LinkedIn" data-i18n-attr="aria-label:contact.card3_open_aria">
+                              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                          </a>
+                      </div>
+
+                      <div class="info-link-card">
+                          <div class="info-link-icon"><i class="fa-solid fa-location-dot"></i></div>
+                          <div class="info-link-text">
+                              <span data-i18n="contact.card4_label">Location</span>
+                              <strong data-i18n="contact.location">Kościuszki 97A, 37-100 Łańcut, Poland</strong>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="contact-form-container">
+                      <form action="https://formspree.io/f/mnjkdekb" method="POST" id="contact-form" class="contact-form">
+                          <input type="text" name="_gotcha" style="display:none">
+                          
+                          <div class="form-row">
+                              <div class="form-group">
+                                  <label for="form-name" data-i18n="contact.form.name_label">Full Name</label>
+                                  <input type="text" id="form-name" name="name" placeholder="e.g. John Doe" data-i18n-attr="placeholder:contact.form.name_placeholder" required>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <div class="form-group">
+                                  <label for="form-email" data-i18n="contact.form.email_label">Your Email Address</label>
+                                  <input type="email" id="form-email" name="email" placeholder="e.g. john@doe.com" data-i18n-attr="placeholder:contact.form.email_placeholder" required>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <div class="form-group">
+                                  <label for="form-message" data-i18n="contact.form.message_label">Message</label>
+                                  <textarea id="form-message" name="message" rows="5" placeholder="How can I help you?" data-i18n-attr="placeholder:contact.form.message_placeholder" required></textarea>
+                              </div>
+                          </div>
+                          
+                          <!-- Math challenge Captcha -->
+                          <div class="form-row">
+                              <div class="form-group">
+                                  <label for="form-captcha" id="captcha-label" data-i18n="contact.form.captcha_loading">Security Check: Loading challenge...</label>
+                                  <input type="number" id="form-captcha" placeholder="Enter answer here" required>
+                              </div>
+                          </div>
+                          
+                          <button type="submit" class="btn btn-primary btn-block">
+                              <span data-i18n="contact.form.submit_btn">Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                          </button>
+                      </form>
+                      <div id="form-toast" class="form-toast">
+                          <i class="fa-solid fa-circle-check"></i> <span data-i18n="contact.form.success_toast">Message sent successfully! Thank you for reaching out.</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+          <div class="container footer-container">
+              <p class="copyright" data-i18n="footer.copyright">
+                  &copy; 2026 Piotr Piłat. All rights reserved.
+              </p>
+              <div class="footer-bottom-links">
+                  <a href="./Resume-Piotr-Pilat.pdf" target="_blank" class="footer-link" data-i18n="footer.resume">View Resume (PDF)</a>
+                  <span class="divider">|</span>
+                  <span class="gdpr-info" data-i18n="footer.gdpr">GDPR consent included inside the Resume PDF.</span>
+              </div>
+          </div>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+  </html>
