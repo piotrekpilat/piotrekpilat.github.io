@@ -328,6 +328,8 @@ body.light-theme .bg-glow-1, body.light-theme .bg-glow-2 {
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
     transition: var(--transition-smooth);
 }
 .lang-toggle-btn:hover {
@@ -1348,6 +1350,111 @@ body.light-theme .social-icon:hover {
     }
     .footer-bottom-links .divider {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --section-padding: 60px 0;
+    }
+    .container {
+        padding: 0 16px;
+    }
+    .logo {
+        font-size: 1.15rem;
+    }
+    .nav-actions {
+        gap: 10px;
+    }
+    .lang-toggle-btn {
+        padding: 0 10px;
+        height: 36px;
+        font-size: 0.8rem;
+    }
+    .theme-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 0.95rem;
+    }
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+    }
+    .hero-socials {
+        justify-content: center;
+        width: 100%;
+    }
+    .image-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+    .xp-card {
+        left: -10px;
+        bottom: 10px;
+        padding: 10px 14px;
+    }
+    .xp-card .num {
+        font-size: 1.6rem;
+    }
+    .tech-card {
+        right: -10px;
+        top: 20px;
+        padding: 10px 14px;
+    }
+    
+    .skills-tabs {
+        gap: 8px;
+    }
+    .tab-btn {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+    
+    .timeline {
+        padding-left: 20px;
+    }
+    .timeline-dot {
+        left: -25px;
+    }
+    .timeline-content {
+        padding: 20px;
+    }
+    .timeline-bullets {
+        padding-left: 16px;
+    }
+
+    .cert-item {
+        padding: 16px;
+        gap: 12px;
+    }
+    .cert-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .info-link-card {
+        padding: 16px;
+        gap: 12px;
+    }
+    .info-link-text a, .info-link-text strong {
+        font-size: 0.9rem;
+        word-break: break-all;
+    }
+    .contact-form-container {
+        padding: 24px 16px;
     }
 }
 
